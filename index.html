@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Past vs Future Journal</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="background"></div>
+  <div class="wrapper">
+    <h1>🕰 Past vs Future — Time Travel Journal</h1>
+
+    <label for="entryDate">📅 Select Date:</label>
+    <input type="date" id="entryDate" />
+
+    <div class="container">
+      <div class="journal">
+        <h2>📜 Past Me</h2>
+        <p id="prompt">Loading prompt...</p>
+        <textarea id="pastInput" placeholder="Write about your past experience..."></textarea>
+      </div>
+
+      <div class="journal">
+        <h2>🔮 Future Me</h2>
+        <p>Write a note to your future self (5 years ahead):</p>
+        <textarea id="futureInput" placeholder="Dear future me..."></textarea>
+      </div>
+    </div>
+
+    <button onclick="downloadJournal()">📥 Download My Journal</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
